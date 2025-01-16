@@ -1,4 +1,4 @@
-name: Provision Fabric Data Platform
+name: Provision Fabric Data Platform Patrick
 on:
   workflow_dispatch:
   push:
