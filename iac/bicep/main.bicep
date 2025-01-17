@@ -94,6 +94,19 @@ module purview './modules/purview.bicep' = if (create_purview || enable_purview)
   
 }
 
+module kv './modules/keyvault.bicep' = {
+  name: keyvault_deployment_name
+  scope: fabric_rg
+  params:{
+     location: fabric_rg.location
+     keyvault_name: 'ba-kv01'
+     cost_centre_tag: cost_centre_tag
+     owner_tag: owner_tag
+     sme_tag: sme_tag
+     purview_account_name: purview.outputs.purview_account_name
+     purviewrg: purviewrg
+  }
+}
 
 resource kv_ref 'Microsoft.KeyVault/vaults@2023-07-01' existing = {
   name: kv.outputs.keyvault_name
