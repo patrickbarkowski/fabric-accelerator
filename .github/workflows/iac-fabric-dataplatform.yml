@@ -1,6 +1,7 @@
-name: Provision Fabric Data Platform
+* 
+aname: Provision Fabric Data Platform
 # on: workflow_dispatch 
-on:
+aon:
   push:
     branches:
         - main
