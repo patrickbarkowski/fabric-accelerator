@@ -6,7 +6,7 @@ targetScope = 'subscription'
 param dprg string= 'rg-fabric-s01'
 
 @description('Resource group location')
-param rglocation string = 'northeurope'
+param rglocation string = 'westeurope'
 
 @description('Cost Centre tag that will be applied to all resources in this deployment')
 param cost_centre_tag string = 'MCAPS'
@@ -86,7 +86,7 @@ module purview './modules/purview.bicep' = if (create_purview || enable_purview)
     create_purview: create_purview
     purviewrg: purviewrg
     purview_name: purview_name
-    location: 'northeurope'
+    location: 'westeurope'
     cost_centre_tag: cost_centre_tag
     owner_tag: owner_tag
     sme_tag: sme_tag
@@ -134,7 +134,7 @@ module fabric_capacity './modules/fabric-capacity.bicep' = {
   scope: fabric_rg
   params:{
     fabric_name: 'bafabric01'
-    location: 'North Europe'
+    location: 'westeurope'
     cost_centre_tag: cost_centre_tag
     owner_tag: owner_tag
     sme_tag: sme_tag
