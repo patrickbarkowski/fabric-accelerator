@@ -111,7 +111,7 @@ module kv './modules/keyvault.bicep' = {
 */
 
 resource kv_ref 'Microsoft.KeyVault/vaults@2023-07-01' existing = {
-  name: kv.outputs.keyvault_name
+  name: 'ba-kv01-rwq3kb4cvopsu'
   scope: fabric_rg
 }
 
