@@ -24,10 +24,10 @@ param deployment_suffix string = utcNow()
 param purviewrg string= 'rg-datagovernance'
 
 @description('Flag to indicate whether to create a new Purview resource with this data platform deployment')
-param create_purview bool = false
+param create_purview bool = true
 
 @description('Flag to indicate whether to enable integration of data platform resources with either an existing or new Purview resource')
-param enable_purview bool = false
+param enable_purview bool = true
 
 @description('Resource Name of new or existing Purview Account. Specify a resource name if create_purview=true or enable_purview=true')
 param purview_name string = 'SitDG'
