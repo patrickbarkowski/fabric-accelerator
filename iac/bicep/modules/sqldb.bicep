@@ -5,7 +5,7 @@ param sqlserver_name string
 param database_name string
 
 @description('Azure Location SQL Server')
-param location string = 'westeurope'
+param location string = 'germanywestcentral'
 
 @description('Cost Centre tag that will be applied to all resources in this deployment')
 param cost_centre_tag string
