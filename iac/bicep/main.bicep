@@ -27,10 +27,10 @@ param purviewrg string= 'rg-datagovernance'
 param create_purview bool = false
 
 @description('Flag to indicate whether to enable integration of data platform resources with either an existing or new Purview resource')
-param enable_purview bool = true
+param enable_purview bool = false
 
 @description('Resource Name of new or existing Purview Account. Specify a resource name if create_purview=true or enable_purview=true')
-param purview_name string = 'ContosoDG'
+param purview_name string = 'SitDG'
 
 @description('Resource group where audit resources will be deployed. Resource group will be created if it doesnt exist')
 param auditrg string= 'rg-audit'
