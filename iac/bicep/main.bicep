@@ -147,7 +147,7 @@ module controldb './modules/sqldb.bicep' = {
   name: controldb_deployment_name
   scope: fabric_rg
   params:{
-     sqlserver_name: 'ba-sql02'
+     sqlserver_name: 'ba-sql01'
      database_name: 'controlDB' 
      location: 'North Europe'
      cost_centre_tag: cost_centre_tag
