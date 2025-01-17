@@ -157,7 +157,6 @@ module controldb './modules/sqldb.bicep' = {
      sql_admin_username: kv_ref.getSecret('sqlserver-admin-username')
      sql_admin_password: kv_ref.getSecret('sqlserver-admin-password')
      ad_admin_username:  kv_ref.getSecret('sqlserver-ad-admin-username')
-     //ad_admin_sid:  kv_ref.getSecret('sqlserver-ad-admin-sid')  
      auto_pause_duration: 60
      database_sku_name: 'GP_S_Gen5_1' 
      enable_purview: enable_purview
