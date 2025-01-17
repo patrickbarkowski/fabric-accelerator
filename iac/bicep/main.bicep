@@ -86,7 +86,7 @@ module purview './modules/purview.bicep' = if (create_purview || enable_purview)
     create_purview: create_purview
     purviewrg: purviewrg
     purview_name: purview_name
-    location: purview_rg.location
+    location: 'germanywestcentral'
     cost_centre_tag: cost_centre_tag
     owner_tag: owner_tag
     sme_tag: sme_tag
