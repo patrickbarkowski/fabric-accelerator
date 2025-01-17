@@ -135,7 +135,7 @@ module fabric_capacity './modules/fabric-capacity.bicep' = {
   scope: fabric_rg
   params:{
     fabric_name: 'bafabric01'
-    location: fabric_rg.location
+    location: 'North Europe'
     cost_centre_tag: cost_centre_tag
     owner_tag: owner_tag
     sme_tag: sme_tag
